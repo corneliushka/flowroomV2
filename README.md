@@ -1,12 +1,12 @@
 # flowroomV2
 flowroom v2 - 2020
 
-flowroom v1
+flowroom v2
 This project was bootstrapped with Create React App. 
+The UI framework is Material UI (4.11)
 
-The UI framework is Material UI ()
-
-The upcoming v2 will be rewritten from scratch with Material UI and Redux Form. Backend will be NodeJS/Express, plus MongoDB. Or Firebase only, we will see the needs and opportunities. 
+The upcoming v2 will be rewritten from scratch with Material UI and Redux Form. Backend will be NodeJS/Express, plus MongoDB. 
+Or Firebase only, we will see the needs and opportunities. 
 
 Description
 
@@ -15,7 +15,6 @@ Contexte : when reading the book Flow : The Psychology of Optimal Experience by 
 Objectif: a Dashboard to document my progress in web development, every skill, tutorial, course, projects will appear here. Features will be implemented au fur et à mesure.
 
 Mockup: coming soon.
-
 
 Features
 - A To-Do list (WIP) :
@@ -27,6 +26,7 @@ Interleaving, time-blocking, deep work, splitting tasks (in small chunks), habit
 
 
 Things learned
+
 June 2019:
 
 Outputting Lists :
@@ -38,7 +38,11 @@ Using Axios :
 Route Parameters + deployement (react app on github pages)
 
 
+
+
+
 August 2020: 
+
 (Redux)
 Reducers,
 Store subscriptions,
