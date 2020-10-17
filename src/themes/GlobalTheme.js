@@ -1,7 +1,5 @@
 import { createMuiTheme, makeStyles } from "@material-ui/core/styles";
 
-require('typeface-lato')
-
 export const GlobalTheme = createMuiTheme({
 
     palette: {

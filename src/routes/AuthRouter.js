@@ -1,37 +1,23 @@
 import React, {useEffect} from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import MainLayout from "../components/layouts/MainLayout";
 
 
-const PrivateRoute = () => {
-
-}
+const PrivateRoute = () => {}
 
 const AuthRouter = () => {
     return (
         <>
             <BrowserRouter>
-            <Switch>
-                <PrivateRoute/>
-                <PrivateRoute/>
-                <PrivateRoute/>
-                <PrivateRoute/>
+                <Switch>
+                    {/* <PrivateRoute/> */}
+                    <Route exact path="/home" component={MainLayout} />
 
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-
-            </Switch>
+                    <Redirect from="/" to="/home"/>
+                </Switch>
             </BrowserRouter>
-
-
-            Hell Routing
         </>
     )
 }
+
+export default AuthRouter;

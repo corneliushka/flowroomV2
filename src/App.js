@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AuthRouter from "./routes/AuthRouter"
 
 function App() {
   return (
     <>
-      Hello World
+      <AuthRouter/>
     </>
   );
 }
