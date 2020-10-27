@@ -1,8 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { AppBar, Drawer, Divider, Toolbar, IconButton } from '@material-ui/core';
+import { AppBar, Drawer, Divider, Box, Toolbar, IconButton } from '@material-ui/core';
 import clsx from 'clsx';
 import { useTheme, ThemeProvider } from "@material-ui/core/styles";
+
+import WorkRouter from "../../routes/WorkRouter"
+
 import { Redirect } from "react-router-dom";
+
+
 
 import Menu from "./Menu"
 
@@ -102,7 +107,7 @@ const MainLayout = () => {
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
-                        onClick={handleDrawerOpen}
+                        onClick={openDrawer ? handleDrawerClose : handleDrawerOpen}
                         edge="start"
                         className={clsx(classes.menuButton, {
                             [classes.hide]: openDrawer,
@@ -135,6 +140,16 @@ const MainLayout = () => {
                 <Divider />
                 <Menu />
             </Drawer>
+
+            {/* <Box style={{ width: "100%" }}>
+                <main className={classes.content}>
+                    <Box height="100%" id="dataViewport">
+                        <div className={classes.toolbar} id="toolbarViewport"></div>
+                        <WorkRouter />
+                    </Box>
+                </main>
+            </Box> */}
+
         </>
     )
 }

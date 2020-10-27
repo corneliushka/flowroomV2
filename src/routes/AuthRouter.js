@@ -3,6 +3,9 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import MainLayout from "../components/layouts/MainLayout";
 
 
+import D3Graphs from "../pages/D3Graphs"
+import Home from "../pages/Home"
+
 const PrivateRoute = () => {}
 
 const AuthRouter = () => {
@@ -11,9 +14,11 @@ const AuthRouter = () => {
             <BrowserRouter>
                 <Switch>
                     {/* <PrivateRoute/> */}
-                    <Route exact path="/home" component={MainLayout} />
+                    <Route exact path="/work" component={MainLayout} />
+                    <Route path="/work/home" component={Home} />
+                    <Route path="/work/d3graphs" component={D3Graphs}/>
 
-                    <Redirect from="/" to="/home"/>
+                    <Redirect exact from="/" to="/work"/>
                 </Switch>
             </BrowserRouter>
         </>
